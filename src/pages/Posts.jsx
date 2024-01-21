@@ -36,8 +36,8 @@ const Posts = () => {
           <div
             key={post.id}
             className={` ${
-              post?.title?.toLowerCase().startsWith(inputValue) ||
-              post?.author_name?.toLowerCase().startsWith(inputValue)
+              post?.title?.toLowerCase().includes(inputValue) ||
+              post?.author_name?.toLowerCase().includes(inputValue)
                 ? "block"
                 : "hidden"
             }`}
