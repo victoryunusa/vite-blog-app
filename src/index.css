@@ -13,7 +13,7 @@
   max-width: 900px;
   margin: 0 auto;
   border-bottom: 1px solid #f2f2f2;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 .navbar h1 {
   color: #1e1c21;
@@ -35,11 +35,24 @@
   padding: 20px;
 }
 
+.block {
+  display: block;
+  visibility: visible;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
 /* blog previews / list */
 .blog-preview {
   padding: 10px 16px;
-  margin: 20px 0;
-  border-bottom: 1px solid #fafafa;
+  margin: 50px 0;
+  border-bottom: 1px solid #dad8d8;
+  width: 500px;
+  border-radius: 10px;
+  
 }
 .blog-preview:hover {
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
@@ -61,6 +74,7 @@
 }
 .blog-details div {
   margin: 20px 0;
+  place-items: center;
 }
 .blog-details button {
   background: #1e1c21;
@@ -69,6 +83,11 @@
   padding: 8px;
   border-radius: 8px;
   cursor: pointer;
+}
+
+.blog-details p {
+  width: 100%;
+  line-height: 1.5em;
 }
 
 
@@ -103,8 +122,9 @@
   background: #1e1c21;
   color: #fff;
   border: 0;
-  padding: 8px;
+  padding: 10px;
   border-radius: 8px;
   cursor: pointer;
   width: 100%;
+  margin-top: 10px;
 }

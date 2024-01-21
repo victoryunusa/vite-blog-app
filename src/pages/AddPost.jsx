@@ -4,10 +4,14 @@ import { useNavigate } from "react-router-dom";
 
 const AddPost = () => {
   const navigate = useNavigate();
+
+  //State variables
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+
+  //Add post function
   const addPost = async (e) => {
     e.preventDefault();
     const { error } = await supabase.from("posts").insert({
