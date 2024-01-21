@@ -28,6 +28,16 @@ const PostDetail = () => {
         <div className="blog-details" key={single_post?.id}>
           <h2 className="">{single_post?.title}</h2>
           <p>Written by: {single_post?.author_name}</p>
+          <p>
+            Contact:{" "}
+            <a
+              href={`mailto:${single_post?.email}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {single_post?.email}
+            </a>
+          </p>
           <div>
             <p>{single_post?.content}</p>
           </div>
